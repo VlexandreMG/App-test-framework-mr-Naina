@@ -6,7 +6,7 @@
 
     <!-- 1. Ton Listener pour initialiser le framework au démarrage -->
     <listener>
-        <listener-class>com.monframework.listener.AppServletContextListener</listener-class>
+        <listener-class>com.monframework.listener.AppContextListener</listener-class>
     </listener>
 
     <!-- 2. Ton FrontController pour intercepter toutes les requêtes -->
