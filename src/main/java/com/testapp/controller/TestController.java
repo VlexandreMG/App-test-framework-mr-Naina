@@ -1,7 +1,6 @@
 package com.testapp.controller;
 
 import com.monframework.annotation.Controller;
-import com.monframework.annotation.UrlMapping;
 import com.monframework.annotation.Rest;
 import com.testapp.model.Employe;
 import java.util.List;
