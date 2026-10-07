@@ -6,10 +6,10 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="" method="post">
+    <form action="save-olona" method="post">
         Nom : <input type="text" name="nom"><br>
         Prenom : <input type="text" name="prenom"><br>
-        <input type="button" value="Envoyer">
+        <button>Envoyer</button>
     </form>
 </body>
 </html>
