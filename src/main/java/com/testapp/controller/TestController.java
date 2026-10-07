@@ -9,6 +9,12 @@ import java.util.List;
 @Annotation
 public class TestController {
 
+    // Sprint 7
+    @Controller(value = "/save-olona", method = "POST") 
+    public String save(String nom , String prenom) {
+        return "hello.jsp";
+    }
+
     // Test 1 : Route HTML / JSP classique
     @Controller(value = "/hello")
     public String sayHello() {
