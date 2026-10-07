@@ -24,4 +24,9 @@ public class TestController {
             new Employe("Bob", "Architecte")
         );
     }
+
+    @Controller(value="/sprint7")
+    public String sprint7() {
+        return "sprint7.jsp";
+    }
 }
