@@ -16,7 +16,7 @@ mkdir -p $BUILD_DIR/WEB-INF/lib
 
 # Compilation des fichiers Java en utilisant les jars dans WEB-INF/lib (framework.jar + éventuels ...)
 find $SRC_DIR -name "*.java" > sources.txt
-javac -cp "$SERVLET_API_JAR" -d $BUILD_DIR/WEB-INF/classes @sources.txt
+javac -parameters -cp "$SERVLET_API_JAR" -d $BUILD_DIR/WEB-INF/classes @sources.txt
 rm sources.txt
 
 # Copier les fichiers web (web.xml, JSP, etc.) et les libs
