@@ -10,9 +10,10 @@ import java.util.List;
 public class TestController {
 
     // Sprint 7
+    @Rest
     @Controller(value = "/save-olona", method = "POST") 
     public String save(String nom , String prenom) {
-        return "hello.jsp";
+        return nom + " " + prenom;
     }
 
     // Test 1 : Route HTML / JSP classique
