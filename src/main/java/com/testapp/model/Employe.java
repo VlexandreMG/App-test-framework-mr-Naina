@@ -1,8 +1,8 @@
 package com.testapp.model;
 
 public class Employe {
-    private String nom;
-    private String poste;
+    public String nom;
+    public String poste;
 
     public Employe(String nom, String poste) {
         this.nom = nom;
