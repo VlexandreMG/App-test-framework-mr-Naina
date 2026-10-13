@@ -9,6 +9,16 @@ public class Employe {
         this.poste = poste;
     }
 
+    public Employe() {}
+
+    public void setNom(String nom) {
+        this.nom = nom;
+    }
+
+    public void setPoste(String poste) {
+        this.poste = poste;
+    }
+
     public String getNom() { return nom; }
     public String getPoste() { return poste; }
 }
