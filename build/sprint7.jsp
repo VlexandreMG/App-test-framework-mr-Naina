@@ -8,7 +8,7 @@
 <body>
     <form action="save-olona" method="post">
         Nom : <input type="text" name="nom"><br>
-        Prenom : <input type="text" name="prenom"><br>
+        Poste : <input type="text" name="poste"><br>
         <button>Envoyer</button>
     </form>
 </body>

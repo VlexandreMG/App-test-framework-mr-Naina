@@ -12,8 +12,8 @@ public class TestController {
     // Sprint 7
     @Rest
     @Controller(value = "/save-olona", method = "POST") 
-    public String save(String nom , String prenom) {
-        return nom + " " + prenom;
+    public String save(Employe e) {
+        return e.nom + " " + e.poste;
     }
 
     // Test 1 : Route HTML / JSP classique
