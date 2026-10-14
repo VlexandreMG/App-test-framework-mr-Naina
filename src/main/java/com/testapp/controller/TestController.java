@@ -32,6 +32,12 @@ public class TestController {
         );
     }
 
+    // Sprint 8
+    @Controller(value="/sprint8")
+    public String sprint8() {
+        return "sprint8.jsp";
+    }
+
     @Controller(value="/sprint7")
     public String sprint7() {
         return "sprint7.jsp";
