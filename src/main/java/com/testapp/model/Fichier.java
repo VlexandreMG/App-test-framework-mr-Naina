@@ -1,6 +1,5 @@
 package com.testapp.model;
 
-
 public class Fichier {
     private String nom;
     private byte[] contenu;
