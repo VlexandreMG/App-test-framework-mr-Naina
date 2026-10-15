@@ -4,12 +4,25 @@ import com.monframework.controller.Annotation;
 import com.monframework.annotation.Controller;
 import com.monframework.annotation.Rest;
 import com.testapp.model.Employe;
+import com.testapp.model.Fichier;
 import java.util.List;
+import java.util.UUID;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 
 @Annotation
 public class TestController {
 
-    // Sprint 7
+    // Sprint 8 
+    @Rest
+    @Controller(value = "/upload", method = "POST")
+    public String upload(Fichier f) throws Exception {
+       String nomGenere = UUID.randomUUID() + "." + f.getExtension();
+       Files.write(Paths.get("/tmp/uploads/" + nomGenere),f.getContenu());
+       return nomGenere;
+    }
+
+    // Sprint 7 
     @Rest
     @Controller(value = "/save-olona", method = "POST") 
     public String save(Employe e) {
@@ -32,12 +45,13 @@ public class TestController {
         );
     }
 
-    // Sprint 8
+    // Page Sprint 8
     @Controller(value="/sprint8")
     public String sprint8() {
         return "sprint8.jsp";
     }
 
+    // Page Sprint 7
     @Controller(value="/sprint7")
     public String sprint7() {
         return "sprint7.jsp";
