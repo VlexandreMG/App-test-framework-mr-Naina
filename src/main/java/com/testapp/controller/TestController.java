@@ -16,7 +16,7 @@ public class TestController {
 
     // Sprint 9 
     @Controller(value = "/login",  method = "GET")
-    public String login(Session session , User user) {
+    public String login(Session session , Employe user) {
         session.put("user", user);
         return "hello.jsp";
     }
