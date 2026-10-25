@@ -13,6 +13,14 @@ import java.nio.file.Paths;
 @Annotation
 public class TestController {
 
+
+    // Sprint 9 
+    @Controller(value = "/login",  method = "GET")
+    public String login(Session session , User user) {
+        session.put("user", user);
+        return "hello.jsp";
+    }
+
     // Sprint 8 
     @Rest
     @Controller(value = "/upload", method = "POST")
