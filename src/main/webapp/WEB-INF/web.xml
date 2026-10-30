@@ -19,6 +19,10 @@
             <param-name>session-user</param-name>
             <param-value>user</param-value>
         </init-param>
+        <init-param>
+            <param-name>page-login</param-name>
+            <param-value>/login</param-value>
+        </init-param>
     </servlet>
 
     <servlet-mapping>
