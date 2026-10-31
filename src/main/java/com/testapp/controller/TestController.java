@@ -14,9 +14,13 @@ import com.monframework.model.Session;
 @Annotation
 public class TestController {
 
-
+    @Controller(value = "/login", method = "GET")  
+    public String loginForm() {
+        return "login.jsp"
+    }
+    
     // Sprint 9 
-    @Controller(value = "/login",  method = "GET")
+    @Controller(value = "/login",  method = "POST")
     public String login(Session session , Employe user) {
         session.put("user", user);
         return "hello.jsp";
