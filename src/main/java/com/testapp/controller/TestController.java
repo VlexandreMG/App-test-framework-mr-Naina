@@ -15,6 +15,11 @@ import com.monframework.annotation.Auth;
 @Annotation
 public class TestController {
 
+    // Sprint 11 : doit s'afficher une seule fois (singleton)
+    public TestController() {
+        System.out.println("[SPRINT 11] TestController créé : " + this.hashCode());
+    }
+
     @Auth
     @Controller(value = "/profil")
     public String testSession() {
