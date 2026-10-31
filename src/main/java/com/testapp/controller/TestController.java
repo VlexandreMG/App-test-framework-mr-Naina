@@ -14,6 +14,12 @@ import com.monframework.model.Session;
 @Annotation
 public class TestController {
 
+    @Auth
+    @Controller(value = "/profil")
+    public String testSession() {
+        return "hello.jsp"
+    }
+
     @Controller(value = "/login", method = "GET")  
     public String loginForm() {
         return "login.jsp"
