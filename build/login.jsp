@@ -1,5 +1,5 @@
-<form action="/login" method="post">
+<form action="login" method="post">
     <input name="nom">
     <input name="poste">
-    <button submit="valider"></button>
+    <button type="submit">Se connecter</button>
 </form>
