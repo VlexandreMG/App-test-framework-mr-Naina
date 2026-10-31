@@ -23,6 +23,11 @@
             <param-name>page-login</param-name>
             <param-value>/login</param-value>
         </init-param>
+        <!-- Sprint 10 bis : clé sous laquelle le rôle de l'utilisateur est rangé en session -->
+        <init-param>
+            <param-name>session-role</param-name>
+            <param-value>role</param-value>
+        </init-param>
     </servlet>
 
     <servlet-mapping>

@@ -30,6 +30,15 @@ public class TestController {
     @Controller(value = "/login",  method = "POST")
     public String login(Session session , Employe user) {
         session.put("user", user);
+        // Sprint 10 bis : le poste sert de rôle
+        session.put("role", user.getPoste());
+        return "hello.jsp";
+    }
+
+    // Sprint 10 bis : réservé au rôle admin
+    @Auth("admin")
+    @Controller(value = "/admin")
+    public String admin() {
         return "hello.jsp";
     }
 
