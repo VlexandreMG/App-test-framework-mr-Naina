@@ -10,6 +10,7 @@ import java.util.UUID;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import com.monframework.model.Session;
+import com.monframework.annotation.Auth;
 
 @Annotation
 public class TestController {
