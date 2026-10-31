@@ -18,12 +18,12 @@ public class TestController {
     @Auth
     @Controller(value = "/profil")
     public String testSession() {
-        return "hello.jsp"
+       return "hello.jsp";
     }
 
     @Controller(value = "/login", method = "GET")  
     public String loginForm() {
-        return "login.jsp"
+        return "login.jsp";
     }
     
     // Sprint 9 
